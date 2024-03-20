@@ -74,10 +74,10 @@ class countryAPI {
                html += `<div role="button" class="card justify-between" data-country="${country.name.common?country.name.common:country.name}">
                               <img src="${country.png}" alt="${country.name.common?country.name.common:country.name}" class="img-fluid" />
                               <div class="flex flex-col">
-                                   <h4 class="country-name">${country.name.official?country.name.official:country.name}</h4> 
-                                   <h5>Population: <span>${country.population}</span></h5>
-                                   <h5>Region: <span>${country.region}</span></h5>
-                                   <h5>Capital: <span>${country.capital?country.capital:"---" }</span></h5>
+                                   <h3 class="country-name">${country.name.official?country.name.official:country.name}</h3> 
+                                   <h4>Population: <span>${country.population}</span></h4>
+                                   <h4>Region: <span>${country.region}</span></h4>
+                                   <h4>Capital: <span>${country.capital?country.capital:"---" }</span></h4>
                               </div>
                          </div>`
           })

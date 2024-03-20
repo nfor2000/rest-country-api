@@ -108,27 +108,6 @@ main {
      padding:20svh 40px 10px;
 }
 
-.card {
-     background-color: var(--bg-main);
-}
-
-.card > div {
-     gap: 2px;
-     padding: 15px;
-}
-
-
-
-.card h5>span {
-     color: var(--text-secondary);
-     font-weight: 500;
-}
-
-.img-fluid {
-     width: 100%;
-     height: 160px;
-}
-
 .search-form {
      width: 400px;
      background-color: var(--bg-main);
@@ -136,20 +115,20 @@ main {
      font-size: 18px;
      border-radius: 5px;
 }
-.search-form button {
+.search-form i {
      font-size: 20px;
 }
 
 .search-form input {
      flex: 1;
      padding:10px 10px;
-     font-size: 18px;
+     font-size: 16px;
 }
 
 .dropdown {
      position: relative;
      background: var(--bg-main);
-     font-size: 16px;
+     font-size: 14px;
      padding: 10px 30px;
      width: max-content;
 }
@@ -170,6 +149,38 @@ main {
      display: none;
      
 }
+
+.card {
+     background-color: var(--bg-main);
+     padding-bottom: 20px;
+}
+
+.card > div {
+     gap: 2px;
+     padding: 15px;
+}
+
+
+.card h3{
+     font-size: 20px;
+     margin-bottom: 10px;
+}
+
+.card h4{
+     font-size: 13px;
+}
+
+
+.card h4 > span {
+     color: var(--text-secondary);
+     font-weight: 400;
+}
+
+.img-fluid {
+     width: 100%;
+     height: 160px;
+}
+
 .btn {
      background-color: var(--bg-main);
      padding:8px 40px;
@@ -193,6 +204,7 @@ main {
 #country-info {
      display: grid;
      grid-template-columns: repeat(2, 1fr);
+     justify-content: center;
      gap: 50px;
 }
 
@@ -223,6 +235,10 @@ main {
      display: flex;
      flex-direction: column;
      gap: 10px;
+}
+
+.info-main > div h5 {
+     font-size: 14px;
 }
 
 .info-main > div h5 span {
