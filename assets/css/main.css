@@ -6,7 +6,7 @@
      --very-dark-blue-text-light-mode: hsl(200, 15%, 8%);
      --text-secondary: hsl(0, 0%, 52%);
      --bg-secondary: hsl(0, 0%, 96%);
-     --bg-main: hsl(0, 0%, 98%);
+     --bg-main: hsl(0, 0%, 100%);
      --shadow-color: #dcdcdc;
      font-family: "Nunito Sans", sans-serif;
 
@@ -158,7 +158,7 @@ main {
      position: absolute;
      width: 100%;
      left: 0;
-     top: calc(-100% -10px);
+     top: calc( 100% + 5px);
      padding: 10px;
      background-color: var(--bg-main);
      flex-direction: column;
