@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Country API</title>
+     <!-- Google font link-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
+     <!-- custom css-->
+     <link rel="stylesheet" href="assets/css/main.css">
+
+     <!--fontawesome link-->
+     <link href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.1-web/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+     <header>
+          <nav>
+               <section class="container flex justify-between">
+                    <h1>Where in the world?</h1>
+                    <button role="button" id="theme-toggler">
+                         <i class="fa fa-moon"></i>
+                         <span>Dark Mode</span>
+                    </button>
+               </section>
+          </nav>
+          <section class="container flex justify-between py-30 gap-20" id="search-filter">
+               <form action="" class="search-form flex align-center" id="form">
+                    <button type="submit" class="fa fa-search"></button>
+                    <input type="search" name="search" id="search" placeholder="search by country...">
+               </form>
+               <button id="dropdown-btn" class="dropdown">
+                    Filter by Region 
+                    <i class="fa fa-caret-down"></i>
+                    <ul class="dropdown-content hide flex">
+                    </ul>
+               </button>
+          </section>
+     </header>
+     <main>
+          <section class="grid container" id="country-container">
+          </section>
+          <div class="preloader">
+               <div class="dots">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+               </div>
+          </div>
+     </main>
+     <script type="module" src="./assets/js/main.js"></script>
+</body>
+</html>

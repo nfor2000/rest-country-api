@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Country API</title>
+     <!-- Google font link-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+          rel="stylesheet">
+
+     <!-- custom css-->
+     <link rel="stylesheet" href="assets/css/main.css">
+
+     <!--fontawesome link-->
+     <link href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.1-web/css/all.min.css"
+          rel="stylesheet">
+
+     <style>
+          main {
+               padding-top: 20vh;
+          }
+     </style>
+</head>
+
+<body>
+     <header>
+          <nav>
+               <section class="container flex justify-between">
+                    <h1>Where in the world?</h1>
+                    <button role="button" id="theme-toggler">
+                         <i class="fa fa-moon"></i>
+                         <span>Dark Mode</span>
+                    </button>
+               </section>
+          </nav>
+          <section class="container flex justify-between py-30" id="search-filter">
+               <a href="./index.html" class="btn"><i class="fa fa-arrow-left"></i> Back</a>
+          </section>
+     </header>
+     <main>
+          <section class="container" id="country-info">
+
+          </section>
+     </main>
+     <script type="module" src="./assets/js/subscript.js"></script>
+</body>
+</html>

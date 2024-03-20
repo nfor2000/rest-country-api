@@ -1,0 +1,312 @@
+:root {
+
+     /* colors definitions*/
+     --text-main: hsl(209, 23%, 22%);
+     --very-dark-blue-bg-dark-mode: hsl(207, 26%, 17%);
+     --very-dark-blue-text-light-mode: hsl(200, 15%, 8%);
+     --text-secondary: hsl(0, 0%, 52%);
+     --bg-secondary: hsl(0, 0%, 96%);
+     --bg-main: hsl(0, 0%, 98%);
+     --shadow-color: #dcdcdc;
+     font-family: "Nunito Sans", sans-serif;
+
+}
+
+html.darkmode{
+     --text-main: hsl(0, 0%, 80%);
+     --bg-main:  hsl(209, 23%, 22%);
+     --text-secondary: hsl(0, 0%, 52%);
+     --bg-secondary: hsl(207, 26%, 17%);
+     --shadow-color: hsl(200, 15%, 8%);
+}
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     color: var(--text-main);
+}
+
+a{
+     text-decoration: none;
+     color: inherit;
+}
+
+input,
+button {
+     border: 0;
+     outline: 0;
+     background-color: transparent;
+}
+
+.flex {
+     display: flex;
+}
+
+.flex-col {
+     flex-direction: column;
+}
+
+.align-center {
+     align-items: center;
+}
+
+.justify-between {
+     justify-content: space-between;
+}
+
+.container {
+     width: 100%;
+     max-width: 1200px;
+     margin-inline: auto;
+}
+
+
+.py-30 {
+     padding-block: 30px;
+}
+
+.gap-20{
+     gap: 20px;
+}
+
+.grid
+ {
+     display: grid;
+     /* grid-template-columns: repeat(auto-fit ,minmax(calc( (1200px - 60px*3 - 40px) / 4), 1fr) ); */
+     justify-content: center;
+     grid-template-columns: repeat(4, 1fr);  
+     gap: 40px;
+}
+
+body {
+     background-color: var(--bg-secondary);
+     min-height: 100vh;
+}
+
+header {
+     position: fixed;
+     width: 100%;
+     z-index: 2;
+     background-color: var(--bg-secondary);
+}
+
+header nav {
+     padding: 20px;
+     background-color: var(--bg-main);
+     box-shadow: 0 1px 20px var(--shadow-color);
+
+}
+
+nav button {
+     font-size: 18px;
+     cursor: pointer;
+}
+
+main {
+     position: relative;
+     padding:20svh 40px 10px;
+}
+
+.card {
+     background-color: var(--bg-main);
+}
+
+.card > div {
+     gap: 2px;
+     padding: 15px;
+}
+
+
+
+.card h5>span {
+     color: var(--text-secondary);
+     font-weight: 500;
+}
+
+.img-fluid {
+     width: 100%;
+     height: 160px;
+}
+
+.search-form {
+     width: 400px;
+     background-color: var(--bg-main);
+     padding: 10px 20px;
+     font-size: 18px;
+     border-radius: 5px;
+}
+.search-form button {
+     font-size: 20px;
+}
+
+.search-form input {
+     flex: 1;
+     padding:10px 10px;
+     font-size: 18px;
+}
+
+.dropdown {
+     position: relative;
+     background: var(--bg-main);
+     font-size: 16px;
+     padding: 10px 30px;
+     width: max-content;
+}
+
+.dropdown-content {
+     position: absolute;
+     width: 100%;
+     left: 0;
+     top: calc(-100% -10px);
+     padding: 10px;
+     background-color: var(--bg-main);
+     flex-direction: column;
+     gap: 10px;
+
+}
+
+.dropdown-content.hide {
+     display: none;
+     
+}
+.btn {
+     background-color: var(--bg-main);
+     padding:8px 40px;
+     display: block;
+     width: max-content;
+     box-shadow: 0 1px 20px var(--shadow-color);
+     font-size: 15px;
+     border-radius:5px ;
+}
+
+.btn-sm {
+     background-color: transparent;
+     padding:4px 20px;
+     display: block;
+     width: max-content;
+     font-size: 12px;
+     border-radius:5px ;
+     border: 1px solid var(--text-main);
+}
+
+#country-info {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 50px;
+}
+
+#country-info .flag{
+     height: 350px;
+}
+
+#country-info .flag img{
+     width: 100%;
+     height: 100%;
+}
+
+.info {
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+     justify-content: center;
+}
+
+.info-main {
+     display: flex;
+     align-items: start;
+     justify-content: space-between;
+     gap: 20px;
+}
+
+.info-main > div{
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+}
+
+.info-main > div h5 span {
+     font-weight: 400;
+     color: var(--text-secondary);
+}
+
+.borders {
+     margin-top: 40px;
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+     gap: 10px;
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+     main{
+          padding-inline: 20px;
+     }
+     
+     #search-filter {
+          padding-inline:20px;
+     }
+
+     .grid{
+          grid-template-columns: repeat(3,1fr);
+     }
+}
+
+
+@media screen and (max-width: 768px) {
+     main {
+          padding-inline: 20px;
+     }
+
+     #country-info {
+          grid-template-columns: 1fr;
+          gap: 50px;
+     }
+
+     .grid{
+          grid-template-columns:1fr 1fr;
+     }
+     
+}
+
+@media screen and (max-width: 412px) {
+
+     main {
+          padding-top: 30vh;
+     }
+     header h1 {
+          font-size: 16px;
+     }
+
+     .grid{
+          grid-template-columns:1fr ;
+     }
+
+     #search-filter {
+          flex-direction: column;
+          gap: 10px;
+     }
+     .search-form {
+          width: 100%;
+     }
+     
+
+     .dropdown {
+          padding: 20px;
+          margin: auto;
+     }
+
+     .info-main {
+          flex-direction: column;
+          gap: 20px;
+     }
+
+     #country-info .flag{
+          height: 240px;
+     }
+}
+
+
