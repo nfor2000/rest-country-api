@@ -27,27 +27,21 @@
                </section>
           </nav>
           <section class="container flex justify-between py-30 gap-20" id="search-filter">
-               <form action="" class="search-form flex align-center" id="form">
+               <form class="search-form flex align-center" id="form">
                     <i class="fa fa-search"></i>
                     <input type="search" name="search" id="search" placeholder="search by country...">
                </form>
                <button id="dropdown-btn" class="dropdown">
                     Filter by Region 
                     <i class="fa fa-caret-down"></i>
-                    <ul class="dropdown-content hide flex">
-                    </ul>
+                    <div class="dropdown-content hide flex">
+                    </div>
                </button>
           </section>
      </header>
      <main>
           <section class="grid container" id="country-container">
           </section>
-          <div class="preloader">
-               <div class="dots">
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-               </div>
-          </div>
      </main>
      <script type="module" src="./assets/js/main.js"></script>
 </body>

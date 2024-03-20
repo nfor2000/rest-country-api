@@ -51,20 +51,20 @@ function renderInfo(countryName, countries) {
                <h2 class="coutry-name">${country.name.official}</h2>
                <div class="info-main">
                     <div>
-                         <h5>Native Name: <span>${nativeNames}</span></h5>
-                         <h5>Population: <span>${country.population}</span></h5>
-                         <h5>Region: <span>${country.region}</span></h5>
-                         <h5>Sub Region: <span>${country.subregion}</span></h5>
-                         <h5>Capital: <span>${country.capital ? country.capital : "---"}</span></h5>
+                         <p>Native Name: <span>${nativeNames}</span></p>
+                         <p>Population: <span>${country.population}</span></p>
+                         <p>Region: <span>${country.region}</span></p>
+                         <p>Sub Region: <span>${country.subregion}</span></p>
+                         <p>Capital: <span>${country.capital ? country.capital : "---"}</span></p>
                     </div>
                     <div>
-                         <h5>Top Level Domain: <span>${country.tld}</span></h5>
-                         <h5>Currencies: <span>${currencies}</span></h5>
-                         <h5>Languages: <span>${languages}</span></h5>
+                         <p>Top Level Domain: <span>${country.tld}</span></p>
+                         <p>Currencies: <span>${currencies}</span></p>
+                         <p>Languages: <span>${languages}</span></p>
                     </div>
                </div>
                <div class="borders">
-                    <h5>Border Countries:</h5>
+                    <p>Border Countries:</p>
                     ${borders.trim() ? borders : 'None'}
                </div>
           </div>`

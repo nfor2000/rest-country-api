@@ -161,12 +161,12 @@ main {
 }
 
 
-.card h3{
+.card h2{
      font-size: 20px;
      margin-bottom: 10px;
 }
 
-.card h4{
+.card h3{
      font-size: 13px;
 }
 
@@ -237,11 +237,12 @@ main {
      gap: 10px;
 }
 
-.info-main > div h5 {
+.info-main > div p {
      font-size: 14px;
+     font-weight: 700;
 }
 
-.info-main > div h5 span {
+.info-main > div p span {
      font-weight: 400;
      color: var(--text-secondary);
 }
