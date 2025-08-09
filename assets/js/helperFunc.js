@@ -1,6 +1,6 @@
 
 export async function fetchCountries() {
-     const response = await fetch('../../data.json');
+     const response = await fetch('/data.json');
      const data = await response.json();
 
      let countries = data;
