@@ -1,6 +1,6 @@
 
 export async function fetchCountries() {
-     const response = await fetch('/data.json');
+     const response = await fetch('https://nfor2000.github.io/rest-country-api/data.json');
      const data = await response.json();
 
      let countries = data;
